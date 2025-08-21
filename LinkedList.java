@@ -26,4 +26,29 @@ public class LinkedList {
         }
         return dummy.next;
     }
+
+    // Utility function to print linked list
+    public static void printList(ListNode node) {
+        while (node != null) {
+            System.out.print(node.val);
+            if (node.next != null) System.out.print(" -> ");
+            node = node.next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        // First number: 342 (stored as 2 -> 4 -> 3)
+        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+
+        // Second number: 465 (stored as 5 -> 6 -> 4)
+        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+
+        LinkedList solution = new LinkedList();
+        ListNode result = solution.addTwoNumbers(l1, l2);
+
+        // Print result: should be 807 (7 -> 0 -> 8)
+        System.out.print("Result: ");
+        printList(result);
+    }
 }
