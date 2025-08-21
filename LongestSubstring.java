@@ -28,6 +28,7 @@ s consists of English letters, digits, symbols and spaces.
  */
 
 import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
 
 public class LongestSubstring {
@@ -45,5 +46,18 @@ public class LongestSubstring {
         }
 
         return maxLen;
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String input = scan.nextLine();
+
+        LongestSubstring solver = new LongestSubstring();
+        int result = solver.lengthOfLongestSubstring(input);
+
+        System.out.println("Length of longest substring without repeating characters: " + result);
+
+        scan.close();
     }
 }
