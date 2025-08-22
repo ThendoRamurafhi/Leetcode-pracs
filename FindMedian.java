@@ -32,15 +32,15 @@ import java.util.Scanner;
 
 public class FindMedian {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        ArrayList<Integer> merge = new ArrayList<>();
+        ArrayList<Integer> merge = new ArrayList<>();// change arrlist to int[] merge = new int[maxleng]
         //int maxLeng = Math.max(nums1.length, nums2.length);
         double median;
         for(int i = 0; i < nums1.length; i++){
-            merge.add(nums1[i]);
+            merge.add(nums1[i]);// merge = int[i];
         }
 
          for(int i = 0; i < nums2.length; i++){
-            merge.add(nums2[i]);
+            merge.add(nums2[i]); // merge = int[i];
         }
 
         Collections.sort(merge);
