@@ -81,5 +81,7 @@ public class FindMedian {
         // Find and print median
         double result = fm.findMedianSortedArrays(nums1, nums2);
         System.out.println("The median is: " + result);
+
+        scan.close();
     }
 }
