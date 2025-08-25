@@ -58,6 +58,28 @@ public class FindMedian {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
+        FindMedian fm = new FindMedian();
+
+        // Read first array
+        System.out.print("Enter size of first array: ");
+        int n1 = scan.nextInt();
+        int[] nums1 = new int[n1];
+        System.out.println("Enter " + n1 + " integers:");
+        for (int i = 0; i < n1; i++) {
+            nums1[i] = scan.nextInt();
+        }
+
+        // Read second array
+        System.out.print("Enter size of second array: ");
+        int n2 = scan.nextInt();
+        int[] nums2 = new int[n2];
+        System.out.println("Enter " + n2 + " integers:");
+        for (int i = 0; i < n2; i++) {
+            nums2[i] = scan.nextInt();
+        }
+
+        // Find and print median
+        double result = fm.findMedianSortedArrays(nums1, nums2);
+        System.out.println("The median is: " + result);
     }
 }
