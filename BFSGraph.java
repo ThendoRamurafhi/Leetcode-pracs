@@ -32,16 +32,27 @@ public class BFSGraph {
 
         return results; 
     }
+    public static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) {
+    adj.get(u).add(v);
+    adj.get(v).add(u); // undirected graph, remove this if directed
+    }
+
     public static void main(String[] args) {
+        int vertices = 5;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
-        adj.add(new ArrayList<>(Arrays.asList(1,2)));
-        adj.add(new ArrayList<>(Arrays.asList(0,2,3)));
-        adj.add(new ArrayList<>(Arrays.asList(0,1,4)));
-        adj.add(new ArrayList<>(Arrays.asList(1,4)));
-        adj.add(new ArrayList<>(Arrays.asList(2,3)));
+        for (int i = 0; i < vertices; i++) {
+            adj.add(new ArrayList<>());
+        }
+
+        addEdge(adj, 0, 1);
+        addEdge(adj, 0, 2);
+        addEdge(adj, 1, 2);
+        addEdge(adj, 1, 3);
+        addEdge(adj, 2, 4);
+        addEdge(adj, 3, 4);
 
         ArrayList<Integer> ans = bfs(adj);
-        for(int i: ans){
+        for (int i : ans) {
             System.out.println(i);
         }
     }
