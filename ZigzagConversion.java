@@ -71,5 +71,6 @@ public class ZigzagConversion {
         }
 
         System.out.println("Converted: " + result.toString());
+        scan.close();
     }
 }
