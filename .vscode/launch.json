@@ -1,0 +1,85 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BFSGraph",
+            "request": "launch",
+            "mainClass": "BFSGraph",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
+            "name": "CurrencyExchange",
+            "request": "launch",
+            "mainClass": "CurrencyExchange",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
+            "name": "DFSGraph",
+            "request": "launch",
+            "mainClass": "DFSGraph",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
+            "name": "FindMedian",
+            "request": "launch",
+            "mainClass": "FindMedian",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
+            "name": "LongestPalindrome",
+            "request": "launch",
+            "mainClass": "LongestPalindrome",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
+            "name": "LongestSubstring",
+            "request": "launch",
+            "mainClass": "LongestSubstring",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
+            "name": "MaxSubarray",
+            "request": "launch",
+            "mainClass": "MaxSubarray",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
+            "name": "TwoSum",
+            "request": "launch",
+            "mainClass": "TwoSum",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
+            "name": "ZigzagConversion",
+            "request": "launch",
+            "mainClass": "ZigzagConversion",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        }
+    ]
+}
