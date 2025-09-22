@@ -12,4 +12,12 @@ public class Reverse {
         }
         return (int) rev;
     }
+
+    public static void main(String[] args) {
+        Reverse rev = new Reverse();
+        int x = -123; 
+        int r = rev.reverse(x);
+        
+        System.out.println(r);
+    }
 }

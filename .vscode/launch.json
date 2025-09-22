@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Reverse",
+            "request": "launch",
+            "mainClass": "Reverse",
+            "projectName": "Amazon Assessment_ac9a8c34"
+        },
+        {
+            "type": "java",
             "name": "BinarySearchVers2",
             "request": "launch",
             "mainClass": "BinarySearchVers2",
