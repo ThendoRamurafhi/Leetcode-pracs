@@ -26,27 +26,42 @@ Constraints:
 n == height.length
 2 <= n <= 105
 0 <= height[i] <= 104
- */
+*/
 
 public class MaxContainer {
     public int maxArea(int[] height) {
         int n = height.length;
         int i = 0;
-        int j = n-1;
+        int j = n - 1;
 
         int area = 0;
-        while(i < j){
+        while (i < j) {
+            area = Math.max(area, (j - i) * Math.min(height[i], height[j]));
 
-            area = Math.max(area, (j-i) * Math.min(height[i] , height[j]));
-
-            if(height[i] < height[j]){
+            if (height[i] < height[j]) {
                 i++;
-            }
-            else{
+            } else {
                 j--;
             }
         }
 
         return area;
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        MaxContainer sol = new MaxContainer();
+
+        int[] height1 = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        System.out.println("Max area: " + sol.maxArea(height1)); // Expected: 49
+
+        int[] height2 = {1, 1};
+        System.out.println("Max area: " + sol.maxArea(height2)); // Expected: 1
+
+        int[] height3 = {4, 3, 2, 1, 4};
+        System.out.println("Max area: " + sol.maxArea(height3)); // Expected: 16
+
+        int[] height4 = {1, 2, 1};
+        System.out.println("Max area: " + sol.maxArea(height4)); // Expected: 2
     }
 }
