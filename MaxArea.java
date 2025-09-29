@@ -19,4 +19,13 @@ public class MaxArea {
 
         return area;
     }
+
+    public static void main(String[] args) {
+        MaxArea solution = new MaxArea();
+
+        int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7}; // sample input
+        int result = solution.maxArea(height);
+
+        System.out.println("Maximum area: " + result);
+    }
 }
