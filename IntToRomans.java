@@ -31,7 +31,7 @@ public class IntToRomans {
     }
 
     public static void main(String[] args) {
-        IntToRoman converter = new IntToRoman();
+        IntToRomans converter = new IntToRomans();
         System.out.println(converter.intToRoman(3749)); // MMMDCCXLIX
         System.out.println(converter.intToRoman(58)); // LVIII
         System.out.println(converter.intToRoman(1994)); // MCMXCIV
